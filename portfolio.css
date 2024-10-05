@@ -1,0 +1,180 @@
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Adicionado para garantir a cor do h1 */
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.interface img {
+    max-width: 100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #6f00ff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+p {
+    text-align: justify;
+    max-width: 1000px;
+    color: #ffffff; /* Adicionado para garantir a cor dos parágrafos */
+}
+
+span {
+    color: #a6ecfd;
+}
+
+.linguagens {
+    display: flex;                /* Usa Flexbox para centralizar */
+    justify-content: center;      /* Centraliza horizontalmente */
+    align-items: center;          /* Centraliza verticalmente, se necessário */
+    margin-top: 20px;            /* Espaço acima, se desejado */
+}
+
+.linguagens img {
+    max-width: 60%;             /* Garante que a imagem não ultrapasse a largura da tela */
+    height: auto;                /* Mantém a proporção da imagem */
+    width: 80%;                  /* Ajuste a largura conforme necessário (ex: 80%) */
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s;
+}
+
+header a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #c797f5;
+    transform: scale(1.05);
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+.flex {
+    justify-content: space-between; /* Remover duplicata */
+}
+
+.img-topo-site {
+    margin-top: 20px;
+}
+
+.txt-topo-site h1 {
+    margin-bottom: 20px;
+}
+
+.topo-do-site h1 {
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p {
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* RODAPE */
+
+footer {
+    background-color: #6f00ff;
+    color: #a6ecfd;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px; 
+    height: 40px; 
+}
+
+html {
+    scroll-behavior: smooth; /* Adiciona rolagem suave ao clicar nos links de âncora */
+}

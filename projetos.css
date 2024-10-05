@@ -1,0 +1,239 @@
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s;
+}
+
+header a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #6f00ff;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px #c797f5;
+    transform: scale(1.05);
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.interface img {
+    max-width: 100px;
+}
+
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+}
+
+.visual {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.visual img {
+    max-width: 100px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p {
+    text-align: justify;
+    max-width: 2000px;
+}
+
+span {
+    color: #a6ecfd;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.texto-principal {
+    padding: 40px 4%;
+}
+
+section.texto-principal.flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.texto-principal .txt-texto-principal p {
+    color: #ffffff;
+    margin: 40px 0;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #6f00ff;
+    color: #a6ecfd;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+
+.btn-site {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Adicione espaço acima, se necessário */
+}
+
+.site-button {
+    display: inline-block;
+    padding: 10px 40px; /* Mesma configuração de padding */
+    font-size: 18px; /* Mesma configuração de font-size */
+    font-weight: 600; /* Mesma configuração de font-weight */
+    background-color: #6f00ff; /* Mesma cor de fundo */
+    color: white; /* Cor do texto */
+    border: 0; /* Sem borda */
+    border-radius: 30px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    text-decoration: none; /* Remove sublinhado */
+    transition: .4s; /* Efeito de transição */
+}
+
+.site-button:hover {
+    box-shadow: 0px 0px 8px #c797f5; /* Sombra ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+}
+
+html {
+    scroll-behavior: smooth; /* Adiciona rolagem suave ao clicar nos links de âncora */
+}
+
+.no-underline {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #ffffff; /* Mantenha a cor do texto igual ao restante */
+}
+
+.no-underline:hover {
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse (opcional) */
+}
+
+
+/*CARROSSEL*/
+
+.carrossel {
+    background-color: #e0f7fa; /* Azul mais claro */
+    position: relative;
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: 20px auto;
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    border-radius: 10px; /* Arredondar os cantos, opcional */
+}
+
+.carrossel-imagens {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carrossel img {
+    max-width: 100%;
+    display: block;
+}
+
+.prev.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/*GALERIA*/
+
+.galeria {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin: 20px 0; /* Margem superior e inferior */
+}
+
+.container {
+    display: flex; /* Cria um contêiner flexível */
+    gap: 100px; /* Espaço entre as imagens */
+}
+
+.foto {
+    width: 700px; /* Largura fixa para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Arredonda as bordas das imagens, opcional */
+}
